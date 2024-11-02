@@ -20,7 +20,7 @@ stage('Post-to-dockerhub')
     docker.withRegistry('https://registry.hub.docker.com' , 'dockerhub-creds')
 }
 
-stage('Deploy Me')
+stage('Deploy')
 {
      sh "docker-compose down"
 }    sh "docker-compose up -d"
