@@ -12,7 +12,7 @@ stage('Build-and-Tag')
 {
     /* This builds the actual image;
          * This is synonymous to docker build on the command line */
-    app.docker.build('akawilk/car_webnew_repo')
+    docker.build('akawilk/car_webnew_repo')
 }
 
 stage('Post-to-dockerhub')
@@ -24,6 +24,5 @@ stage('Deploy')
 {
      sh "docker-compose down"
 }    sh "docker-compose up -d"
-
 
 }
