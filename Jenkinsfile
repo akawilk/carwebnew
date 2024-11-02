@@ -1,7 +1,7 @@
 node ('Ubuntu-Appserver-3120')
 {
 
-def app
+def Testing
 stage('Cloning Git')
 {
     /* Let's make sure we have the repository cloned to our workspace */
