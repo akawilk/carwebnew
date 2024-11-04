@@ -5,5 +5,5 @@ services:
     ports:
       - '80:80'
     volumes:
-      - ./:usr/local/apache2/htdocs
+      - ./:/usr/local/apache2/htdocs
       
