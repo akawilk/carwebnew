@@ -17,7 +17,7 @@ stage('Build-and-Tag')
 
 stage('Post-to-dockerhub')
 {
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-creds') {
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub-creds-2') {
         echo 'hello'
     }
 }
